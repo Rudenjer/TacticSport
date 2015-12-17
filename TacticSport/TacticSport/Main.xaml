@@ -1,0 +1,65 @@
+﻿<Window x:Class="TacticSport.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main" Height="300" Width="461.111">
+    <Grid Margin="0,0,2,0">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+            <Menu Height="25" VerticalAlignment="Top" >
+                <MenuItem Header="File">
+                    <MenuItem Header="Save" ></MenuItem>
+                    <MenuItem Header="Exit" >
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="User Profile" ></MenuItem>
+                <MenuItem Header="Kind of sport">
+                    <MenuItem Header="Football" ></MenuItem>
+                    <MenuItem Header="Basketball" ></MenuItem>
+                    <MenuItem Header="Hockey" ></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Import tactic" ></MenuItem>
+                <MenuItem Header="Team" >
+                    <MenuItem Header="Add" ></MenuItem>
+                    <MenuItem Header="Update" ></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Help" ></MenuItem>
+            </Menu>
+
+            <DockPanel Height="133">
+                <ListView Height="134">
+                    <ListViewItem>Россия</ListViewItem>
+                    <ListViewItem>Словакия</ListViewItem>
+                    <ListViewItem>Ирландия</ListViewItem>
+                    <ListViewItem>Армения</ListViewItem>
+                    <ListViewItem>Македония</ListViewItem>
+                    <ListViewItem>Андорра</ListViewItem>
+                </ListView>
+                <Canvas x:Name="Canvas" HorizontalAlignment="Stretch" Width="295">
+                </Canvas>
+                <ListView Height="134" HorizontalAlignment="Right" >
+                    <ListViewItem>Россия</ListViewItem>
+                    <ListViewItem>Словакия</ListViewItem>
+                    <ListViewItem>Ирландия</ListViewItem>
+                    <ListViewItem>Армения</ListViewItem>
+                    <ListViewItem>Македония</ListViewItem>
+                    <ListViewItem>Андорра</ListViewItem>
+                </ListView>
+            </DockPanel>
+            <DockPanel Margin="76,0,79,0">
+                <Button Margin="5" Content="Play" Width="45" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Button Margin="5" Content="Stop" Width="45" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <ProgressBar Margin="5" Height="20" Width="176"/>
+            </DockPanel>
+            <DockPanel Height="71">
+                <Button Margin="5" Content="Button" Width="75" VerticalAlignment="Top" />
+                <RichTextBox Height="71" VerticalAlignment="Top" Width="278">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run Text=""/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+                <Button Margin="5" Content="Button" Width="75" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
